@@ -1,10 +1,10 @@
 
-interface SearchProps {
+interface SearchIconProps {
     color?: string
     size?: number
 }
 
-const SearchSVG = ({ color = "white", size = 24 }: SearchProps) => {
+const SearchIcon = ({ color = "white", size = 24 }: SearchIconProps) => {
   return (
     <svg
       width={size}
@@ -23,4 +23,4 @@ const SearchSVG = ({ color = "white", size = 24 }: SearchProps) => {
   );
 };
 
-export default SearchSVG;
+export default SearchIcon;

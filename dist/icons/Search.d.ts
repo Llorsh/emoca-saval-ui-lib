@@ -1,6 +1,6 @@
-interface SearchProps {
+interface SearchIconProps {
     color?: string;
     size?: number;
 }
-declare const SearchSVG: ({ color, size }: SearchProps) => import("react/jsx-runtime").JSX.Element;
-export default SearchSVG;
+declare const SearchIcon: ({ color, size }: SearchIconProps) => import("react/jsx-runtime").JSX.Element;
+export default SearchIcon;

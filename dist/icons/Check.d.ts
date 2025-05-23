@@ -1,6 +1,6 @@
-interface CheckProps {
+interface CheckIconProps {
     color?: string;
     size?: number;
 }
-declare const CheckSvg: ({ color, size }: CheckProps) => import("react/jsx-runtime").JSX.Element;
-export default CheckSvg;
+declare const CheckIcon: ({ color, size }: CheckIconProps) => import("react/jsx-runtime").JSX.Element;
+export default CheckIcon;

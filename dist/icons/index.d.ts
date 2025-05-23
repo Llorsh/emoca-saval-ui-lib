@@ -1,4 +1,4 @@
-export { default as X } from "./X";
-export { default as Check } from "./Check";
-export { default as Label } from "./Label";
-export { default as Search } from "./Search";
+export { default as XIcon } from "./X";
+export { default as CheckIcon } from "./Check";
+export { default as LabelIcon } from "./Label";
+export { default as SearchIcon } from "./Search";

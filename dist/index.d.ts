@@ -1,16 +1,1 @@
 import './assets/css/globals.css';
-export * from './components/Button';
-export * from './components/Font';
-export * from './components/Header';
-export * from './components/Input/Checkbox';
-export * from './components/Input/ToggleSwitch';
-export * from './components/Label';
-export * from './components/LabelTab';
-export * from './components/SearchInput';
-export { default as XIcon } from './icons/X';
-export { default as CheckIcon } from './icons/Check';
-export { default as LabelIcon } from './icons/Label';
-export { default as SearchIcon } from './icons/Search';
-export { default as X } from './icons/X';
-export { default as Check } from './icons/Check';
-export { default as Search } from './icons/Search';

@@ -1,6 +1,6 @@
 import React from 'react';
 import Label from './Label';
-import LabelSVG from '@/icons/Label';
+import { LabelIcon } from '@/icons';
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
     title: 'Atoms/Label',
@@ -46,6 +46,6 @@ export const Info = {
     args: {
         text: 'FAVORITOS',
         status: 'info',
-        svg: React.createElement(LabelSVG)
+        svg: React.createElement(LabelIcon)
     },
 };

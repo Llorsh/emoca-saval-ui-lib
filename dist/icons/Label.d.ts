@@ -1,5 +1,7 @@
-interface LabelSVGProps {
+interface LabelIconProps {
     color?: string;
+    height?: number;
+    width?: number;
 }
-declare const LabelSVG: ({ color }: LabelSVGProps) => import("react/jsx-runtime").JSX.Element;
-export default LabelSVG;
+declare const LabelIcon: ({ color, height, width }: LabelIconProps) => import("react/jsx-runtime").JSX.Element;
+export default LabelIcon;
