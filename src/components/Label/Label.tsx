@@ -1,12 +1,12 @@
-import type { JSX } from "react";
+import type { ReactNode } from "react";
 
-export interface LabelProps {
+export interface LabelProps extends React.HTMLAttributes<HTMLLabelElement> {
   /** Texto del label */
   text: string;
   /** Estado visual del label */
   status?: "approved" | "pending" | "rejected" | "disabled" | "info";
-
-  svg?: JSX.Element;
+  /** Icono opcional */
+  svg?: ReactNode;
 }
 
 const Label = ({
