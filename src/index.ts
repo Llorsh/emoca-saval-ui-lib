@@ -14,5 +14,15 @@ export * from './components/Label';
 export * from './components/LabelTab';
 export * from './components/SearchInput';
 
-// Exportar iconos
-export { X, Check, Label as LabelIcon, Search } from './icons';
+// Re-exportar iconos con sufijo 'Icon'
+export { default as XIcon } from './icons/X';
+export { default as CheckIcon } from './icons/Check';
+export { default as LabelIcon } from './icons/Label';
+export { default as SearchIcon } from './icons/Search';
+
+// Exportar iconos originales sin sufijo para compatibilidad
+export { default as X } from './icons/X';
+export { default as Check } from './icons/Check';
+export { default as Search } from './icons/Search';
+
+// No exportar Label aquí para evitar conflicto con el componente Label
