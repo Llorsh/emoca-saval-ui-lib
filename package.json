@@ -41,12 +41,15 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc --build",
+    "build:css": "tailwindcss -i ./src/index.css -o ./dist/style.css --minify",
+    "build": "pnpm build:css && pnpm tsc -b",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "deploy-storybook": "storybook build && gh-pages -d storybook-static"
+    "deploy-storybook": "storybook build && gh-pages -d storybook-static",
+    "clean": "rm -rf dist",
+    "rebuild": "pnpm clean && pnpm build"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
