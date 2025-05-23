@@ -28,7 +28,7 @@ type Story = StoryObj<typeof meta>;
 export const Primario: Story = {
   args: {
     buttonType: "primary",
-    label: 'Button',
+    children: 'Button',
     type: 'button',
   },
 };
@@ -37,7 +37,7 @@ export const Primario_Medicos: Story = {
   args: {
     buttonType: "primaryDoctor",
     size: 'base',
-    label: 'Button',
+    children: 'Button',
     type: 'button',
   },
 };
@@ -45,7 +45,7 @@ export const Primario_Medicos: Story = {
 export const Secundario: Story = {
   args: {
     buttonType: "secondary",
-    label: 'Button',
+    children: 'Button',
     type: 'button',
   },
 };
@@ -53,7 +53,7 @@ export const Secundario: Story = {
 export const Outline: Story = {
   args: {
     buttonType: "outline",
-    label: 'Button',
+    children: 'Button',
     type: 'button',
   },
 };
@@ -61,7 +61,7 @@ export const Outline: Story = {
 export const Texto: Story = {
   args: {
     buttonType: "text",
-    label: 'Button',
+    children: 'Button',
     type: 'button',
   },
 };

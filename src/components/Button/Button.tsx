@@ -2,8 +2,6 @@
 export interface ButtonProps {
   /** How large should the button be? */
   size?: "xs" | "sm" | "base" | "lg" | "xl";
-  /** Button contents */
-  label: string;
   /** Optional click handler */
   onClick?: () => void;
   /** Optional type */
@@ -11,6 +9,8 @@ export interface ButtonProps {
   /** Optional disabled */
   disabled?: boolean;
   buttonType?: "primary" | "primaryDoctor" | "secondary" | "outline" | "text";
+  /** Button contents */
+  children?: React.ReactNode;
 }
 
 
@@ -19,9 +19,9 @@ export interface ButtonProps {
 const Button = ({
   size = "base",
   type = "button",
-  label,
   disabled = false,
   buttonType = "primary",
+  children,
   ...props
 }: ButtonProps) => {
 
@@ -58,7 +58,7 @@ const Button = ({
       ].join(" ")}
       {...props}
     >
-      {label}
+      {children}
     </button>
   );
 };

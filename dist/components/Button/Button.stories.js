@@ -22,7 +22,7 @@ export default meta;
 export const Primario = {
     args: {
         buttonType: "primary",
-        label: 'Button',
+        children: 'Button',
         type: 'button',
     },
 };
@@ -30,28 +30,28 @@ export const Primario_Medicos = {
     args: {
         buttonType: "primaryDoctor",
         size: 'base',
-        label: 'Button',
+        children: 'Button',
         type: 'button',
     },
 };
 export const Secundario = {
     args: {
         buttonType: "secondary",
-        label: 'Button',
+        children: 'Button',
         type: 'button',
     },
 };
 export const Outline = {
     args: {
         buttonType: "outline",
-        label: 'Button',
+        children: 'Button',
         type: 'button',
     },
 };
 export const Texto = {
     args: {
         buttonType: "text",
-        label: 'Button',
+        children: 'Button',
         type: 'button',
     },
 };

@@ -1,8 +1,6 @@
 export interface ButtonProps {
     /** How large should the button be? */
     size?: "xs" | "sm" | "base" | "lg" | "xl";
-    /** Button contents */
-    label: string;
     /** Optional click handler */
     onClick?: () => void;
     /** Optional type */
@@ -10,8 +8,10 @@ export interface ButtonProps {
     /** Optional disabled */
     disabled?: boolean;
     buttonType?: "primary" | "primaryDoctor" | "secondary" | "outline" | "text";
+    /** Button contents */
+    children?: React.ReactNode;
 }
 /** Primary UI component for user interaction */
-declare const Button: ({ size, type, label, disabled, buttonType, ...props }: ButtonProps) => import("react/jsx-runtime").JSX.Element;
+declare const Button: ({ size, type, disabled, buttonType, children, ...props }: ButtonProps) => import("react/jsx-runtime").JSX.Element;
 export default Button;
 //# sourceMappingURL=Button.d.ts.map

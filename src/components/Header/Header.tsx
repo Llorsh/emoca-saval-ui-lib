@@ -1,6 +1,5 @@
-
-import Button from '../Button/Button';
-import './header.css';
+import Button from "../Button/Button";
+import "./header.css";
 
 type User = {
   name: string;
@@ -17,7 +16,12 @@ const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
   <header>
     <div className="storybook-header">
       <div>
-        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g fill="none" fillRule="evenodd">
             <path
               d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
@@ -41,12 +45,16 @@ const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
             <span className="welcome">
               Welcome, <b>{user.name}</b>!
             </span>
-            <Button size="sm" onClick={onLogout} label="Log out" />
+            <Button size="sm" onClick={onLogout} children="Log out" />
           </>
         ) : (
           <>
-            <Button size="sm" onClick={onLogin} label="Log in" />
-            <Button buttonType="primary" size="sm" onClick={onCreateAccount} label="Sign up" />
+            <Button size="sm" onClick={onLogin}>
+              Button
+            </Button>
+            <Button size="sm" onClick={onCreateAccount}>
+              Button
+            </Button>
           </>
         )}
       </div>

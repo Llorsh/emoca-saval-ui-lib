@@ -12,7 +12,7 @@ var __rest = (this && this.__rest) || function (s, e) {
 import { jsx as _jsx } from "react/jsx-runtime";
 /** Primary UI component for user interaction */
 const Button = (_a) => {
-    var { size = "base", type = "button", label, disabled = false, buttonType = "primary" } = _a, props = __rest(_a, ["size", "type", "label", "disabled", "buttonType"]);
+    var { size = "base", type = "button", disabled = false, buttonType = "primary", children } = _a, props = __rest(_a, ["size", "type", "disabled", "buttonType", "children"]);
     const lightMode = buttonType === "primary"
         ? "bg-primary text-white hover:bg-primary-hover hover:text-white disabled:bg-disabled font-bold"
         : buttonType === "primaryDoctor"
@@ -35,6 +35,6 @@ const Button = (_a) => {
             "rounded-lg",
             sizeClasses[size],
             lightMode
-        ].join(" ") }, props, { children: label })));
+        ].join(" ") }, props, { children: children })));
 };
 export default Button;
