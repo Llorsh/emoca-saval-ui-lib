@@ -1,8 +1,23 @@
 {
   "name": "emoca-saval-ui-lib",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./dist/style.css": {
+      "default": "./dist/style.css"
+    }
+  },
+  "files": [
+    "dist",
+    "src/index.css"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -11,6 +26,9 @@
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.7",
+    "@tailwindcss/postcss": "^4.1.7",
+    "@tailwindcss/vite": "^4.1.7",
+    "@types/node": "^22.15.21",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
