@@ -1,5 +1,5 @@
 import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
-import { CheckIcon } from "icons";
+import { CheckIcon } from "../../../icons";
 import { useState, useEffect } from "react";
 const Checkbox = ({ name = "checkbox", defaultChecked = false, onChange }) => {
     const [checked, setChecked] = useState(defaultChecked);
