@@ -41,14 +41,12 @@
   },
   "scripts": {
     "dev": "vite",
-    "build:css": "tailwindcss -i ./src/index.css -o ./dist/style.css --minify",
-    "build": "pnpm build:css && tsc -b",
+    "build": "tsc --build",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "deploy-storybook": "storybook build && gh-pages -d storybook-static"
-
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
