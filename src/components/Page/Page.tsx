@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 
 import "./page.css";
-import { Header } from "components/Header";
+import { Header } from "../Header";
 
 type User = {
   name: string;
