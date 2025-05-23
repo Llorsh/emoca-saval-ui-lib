@@ -4,3 +4,4 @@ interface CheckIconProps {
 }
 declare const CheckIcon: ({ color, size }: CheckIconProps) => import("react/jsx-runtime").JSX.Element;
 export default CheckIcon;
+//# sourceMappingURL=Check.d.ts.map

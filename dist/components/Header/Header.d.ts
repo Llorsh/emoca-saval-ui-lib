@@ -10,3 +10,4 @@ export interface HeaderProps {
 }
 declare const Header: ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => import("react/jsx-runtime").JSX.Element;
 export default Header;
+//# sourceMappingURL=Header.d.ts.map

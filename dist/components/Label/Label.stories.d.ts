@@ -15,3 +15,4 @@ export declare const Pendiente: Story;
 export declare const Rechazado: Story;
 export declare const Desabilitado: Story;
 export declare const Info: Story;
+//# sourceMappingURL=Label.stories.d.ts.map

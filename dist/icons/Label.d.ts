@@ -5,3 +5,4 @@ interface LabelIconProps {
 }
 declare const LabelIcon: ({ color, height, width }: LabelIconProps) => import("react/jsx-runtime").JSX.Element;
 export default LabelIcon;
+//# sourceMappingURL=Label.d.ts.map

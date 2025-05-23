@@ -5,3 +5,4 @@ interface RadioProps {
 }
 declare const Radio: ({ name, defaultChecked, onChange }: RadioProps) => import("react/jsx-runtime").JSX.Element;
 export default Radio;
+//# sourceMappingURL=Radio.d.ts.map

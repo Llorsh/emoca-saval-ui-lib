@@ -5,3 +5,4 @@ interface CheckboxProps {
 }
 declare const Checkbox: ({ name, defaultChecked, onChange }: CheckboxProps) => import("react/jsx-runtime").JSX.Element;
 export default Checkbox;
+//# sourceMappingURL=Checkbox.d.ts.map

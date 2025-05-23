@@ -10,3 +10,4 @@ export declare const Heading_4: Story;
 export declare const Heading_5: Story;
 export declare const Heading_6: Story;
 export declare const Paragraph: Story;
+//# sourceMappingURL=Font.stories.d.ts.map

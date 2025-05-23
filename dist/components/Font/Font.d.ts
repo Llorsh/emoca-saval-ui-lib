@@ -5,3 +5,4 @@ interface HeadingProps {
 }
 declare const Heading: ({ as, children, className }: HeadingProps) => import("react/jsx-runtime").JSX.Element;
 export default Heading;
+//# sourceMappingURL=Font.d.ts.map

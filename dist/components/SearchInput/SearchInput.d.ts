@@ -5,3 +5,4 @@ export interface SearchInputProps {
 }
 declare const SearchInput: ({ value, setValue, }: SearchInputProps) => import("react/jsx-runtime").JSX.Element;
 export default SearchInput;
+//# sourceMappingURL=SearchInput.d.ts.map

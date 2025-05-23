@@ -9,3 +9,4 @@ export interface LabelProps extends React.HTMLAttributes<HTMLLabelElement> {
 }
 declare const Label: ({ text, status, svg, ...props }: LabelProps) => import("react/jsx-runtime").JSX.Element;
 export default Label;
+//# sourceMappingURL=Label.d.ts.map

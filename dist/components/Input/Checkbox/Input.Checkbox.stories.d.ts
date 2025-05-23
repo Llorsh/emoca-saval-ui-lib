@@ -5,3 +5,4 @@ export default meta;
 type Story = StoryObj<typeof Checkbox>;
 export declare const Checked: Story;
 export declare const Unchecked: Story;
+//# sourceMappingURL=Input.Checkbox.stories.d.ts.map

@@ -5,3 +5,4 @@ export default meta;
 type Story = StoryObj<typeof Radio>;
 export declare const Checked: Story;
 export declare const Unchecked: Story;
+//# sourceMappingURL=Input.Radio.stories.d.ts.map

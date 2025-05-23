@@ -14,3 +14,4 @@ export interface ButtonProps {
 /** Primary UI component for user interaction */
 declare const Button: ({ size, type, label, disabled, buttonType, ...props }: ButtonProps) => import("react/jsx-runtime").JSX.Element;
 export default Button;
+//# sourceMappingURL=Button.d.ts.map

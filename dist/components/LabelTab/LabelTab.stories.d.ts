@@ -5,3 +5,4 @@ export default meta;
 type Story = StoryObj<typeof LabelTab>;
 export declare const Inactive: Story;
 export declare const Active: Story;
+//# sourceMappingURL=LabelTab.stories.d.ts.map

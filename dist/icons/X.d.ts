@@ -4,3 +4,4 @@ interface XProps {
 }
 declare const XSVG: ({ color, size }: XProps) => import("react/jsx-runtime").JSX.Element;
 export default XSVG;
+//# sourceMappingURL=X.d.ts.map

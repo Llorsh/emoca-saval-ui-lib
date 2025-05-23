@@ -5,6 +5,7 @@
     "module": "ESNext",
     "declaration": true,
     "outDir": "dist",
+    "rootDir": "src",
     "jsx": "react-jsx",
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -15,8 +16,10 @@
     "baseUrl": "src",
     "paths": {
       "@/*": ["*"]
-    }
+    },
+    "composite": true,
+    "declarationMap": true
   },
-  "include": ["src/index.ts", "src/components", "src/icons"],
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules", "dist", "**/*.stories.tsx", "**/*.test.tsx"]
 }

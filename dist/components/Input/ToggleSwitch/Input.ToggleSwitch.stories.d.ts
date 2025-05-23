@@ -5,3 +5,4 @@ export default meta;
 type Story = StoryObj<typeof Toggle>;
 export declare const Checked: Story;
 export declare const Unchecked: Story;
+//# sourceMappingURL=Input.ToggleSwitch.stories.d.ts.map

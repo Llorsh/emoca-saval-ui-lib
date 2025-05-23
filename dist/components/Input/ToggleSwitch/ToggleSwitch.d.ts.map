@@ -1,0 +1,1 @@
+{"version":3,"file":"ToggleSwitch.d.ts","sourceRoot":"","sources":["../../../../src/components/Input/ToggleSwitch/ToggleSwitch.tsx"],"names":[],"mappings":"AAEA,UAAU,iBAAiB;IACzB,IAAI,CAAC,EAAE,MAAM,CAAC;IACd,cAAc,CAAC,EAAE,OAAO,CAAC;IACzB,QAAQ,CAAC,EAAE,CAAC,OAAO,EAAE,OAAO,KAAK,IAAI,CAAC;CACvC;AAED,QAAA,MAAM,YAAY,GAAI,oCAAuD,iBAAiB,4CAwB7F,CAAC;AAEF,eAAe,YAAY,CAAC"}
