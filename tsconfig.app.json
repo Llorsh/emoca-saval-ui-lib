@@ -4,6 +4,7 @@
     "lib": ["ES2020", "DOM"],
     "module": "ESNext",
     "declaration": true,
+    "declarationMap": true,
     "outDir": "dist",
     "rootDir": "src",
     "jsx": "react-jsx",
@@ -17,9 +18,15 @@
     "paths": {
       "@/*": ["*"]
     },
-    "composite": true,
-    "declarationMap": true
+    "composite": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["node_modules", "dist", "**/*.stories.tsx", "**/*.test.tsx"]
+  "include": ["src/index.ts", "src/components/**/*", "src/icons/**/*"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/main.tsx",
+    "src/App.tsx",
+    "**/*.stories.tsx",
+    "**/*.test.tsx"
+  ]
 }

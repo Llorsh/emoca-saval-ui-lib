@@ -1,6 +1,3 @@
-// Importar estilos globales
-import './assets/css/globals.css';
-
 // Re-exportar módulos principales
 import * as Components from './components';
 import * as Icons from './icons';
