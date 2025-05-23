@@ -1,7 +1,7 @@
 {
   "name": "emoca-saval-ui-lib",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,7 +16,8 @@
   },
   "files": [
     "dist",
-    "src/index.css"
+    "src/index.css",
+    "src/assets/css/globals.css"
   ],
   "scripts": {
     "dev": "vite",
