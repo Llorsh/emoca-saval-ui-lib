@@ -1,54 +1,125 @@
-# React + TypeScript + Vite
+# EMOCA Saval UI Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![npm version](https://img.shields.io/npm/v/emoca-saval-ui-lib.svg)](https://www.npmjs.com/package/emoca-saval-ui-lib)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Currently, two official plugins are available:
+A modern React component library built with TypeScript and Tailwind CSS, designed to provide a consistent and beautiful UI experience for EMOCA Saval applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+pnpm add emoca-saval-ui-lib
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Or using npm:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install emoca-saval-ui-lib
 ```
+
+Or using yarn:
+
+```bash
+yarn add emoca-saval-ui-lib
+```
+
+## Usage
+
+### Importing Components
+
+You can import components in multiple ways:
+
+#### Method 1: Import directly from the root
+
+```jsx
+import { Button, Checkbox } from 'emoca-saval-ui-lib';
+
+function App() {
+  return (
+    <div>
+      <Button>Click me</Button>
+      <Checkbox label="Check me" />
+    </div>
+  );
+}
+```
+
+#### Method 2: Import from specific paths
+
+```jsx
+import { Button } from 'emoca-saval-ui-lib/components';
+import { XIcon } from 'emoca-saval-ui-lib/icons';
+
+function App() {
+  return (
+    <div>
+      <Button>Click me <XIcon /></Button>
+    </div>
+  );
+}
+```
+
+#### Method 3: Import using namespaces
+
+```jsx
+import { Components, Icons } from 'emoca-saval-ui-lib';
+
+function App() {
+  return (
+    <div>
+      <Components.Button>Click me</Components.Button>
+      <Icons.XIcon />
+    </div>
+  );
+}
+```
+
+### Importing Styles
+
+To use the library's styles, import the CSS file in your main entry file:
+
+```jsx
+import 'emoca-saval-ui-lib/style.css';
+```
+
+## Available Components
+
+- **Button**: Standard button component with various styles
+- **Checkbox**: Customizable checkbox input
+- **Font**: Typography component for consistent text styling
+- **Header**: Page header component
+- **Label**: Text label component
+- **LabelTab**: Tab with label functionality
+- **SearchInput**: Input field with search functionality
+- **ToggleSwitch**: Toggle switch component
+
+## Available Icons
+
+- **XIcon**: X/close icon
+- **CheckIcon**: Checkmark icon
+- **LabelIcon**: Label icon
+- **SearchIcon**: Search icon
+
+## Development
+
+### Building the library
+
+```bash
+pnpm build
+```
+
+### Running Storybook
+
+```bash
+pnpm storybook
+```
+
+### Deploying Storybook to GitHub Pages
+
+```bash
+pnpm deploy-storybook
+```
+
+## License
+
+MIT © EMOCA Saval
