@@ -1,12 +1,12 @@
 // Re-exportar componentes
-export * from './Button';
-export * from './Font';
-export * from './Header';
-export * from './Input/Checkbox';
+export { Button } from './Button';
+export { Font } from './Font';
+export { Header } from './Header';
+export { Checkbox } from './Input/Checkbox';
 // Radio y Page no se exportan actualmente
 // export * from './components/Input/Radio';
 // export * from './components/Page';
-export * from './Input/ToggleSwitch';
-export * from './Label';
-export * from './LabelTab';
-export * from './SearchInput';
+export { ToggleSwitch } from './Input/ToggleSwitch';
+export { Label } from './Label';
+export { LabelTab } from './LabelTab';
+export { SearchInput } from './SearchInput';

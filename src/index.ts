@@ -1,5 +1,8 @@
 // Importar estilos globales
 import './assets/css/globals.css';
 
+// Exportar componentes
+export * from './components';
 
-// No exportar Label aquí para evitar conflicto con el componente Label
+// Exportar iconos
+export * from './icons';

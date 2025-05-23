@@ -1,8 +1,8 @@
-export * from './Button';
-export * from './Font';
-export * from './Header';
-export * from './Input/Checkbox';
-export * from './Input/ToggleSwitch';
-export * from './Label';
-export * from './LabelTab';
-export * from './SearchInput';
+export { Button } from './Button';
+export { Font } from './Font';
+export { Header } from './Header';
+export { Checkbox } from './Input/Checkbox';
+export { ToggleSwitch } from './Input/ToggleSwitch';
+export { Label } from './Label';
+export { LabelTab } from './LabelTab';
+export { SearchInput } from './SearchInput';
