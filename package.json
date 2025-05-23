@@ -23,12 +23,8 @@
     }
   },
   "files": [
-    "dist/components/**/*.js",
-    "dist/components/**/*.d.ts",
-    "dist/components/**/*.d.ts.map",
-    "dist/icons/**/*.js",
-    "dist/icons/**/*.d.ts",
-    "dist/icons/**/*.d.ts.map",
+    "dist/components",
+    "dist/icons",
     "dist/index.js",
     "dist/index.d.ts",
     "dist/index.d.ts.map",

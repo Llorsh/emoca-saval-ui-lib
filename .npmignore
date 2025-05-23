@@ -1,0 +1,31 @@
+# Archivos de desarrollo
+node_modules/
+.storybook/
+src/stories/
+
+# Archivos de Storybook
+**/*.stories.js
+**/*.stories.jsx
+**/*.stories.ts
+**/*.stories.tsx
+**/*.stories.d.ts
+**/*.stories.d.ts.map
+dist/stories/
+
+# Archivos de configuración
+.eslintrc.js
+.prettierrc
+tsconfig.json
+tsconfig.*.json
+vite.config.js
+
+# Archivos de prueba
+**/*.test.js
+**/*.test.jsx
+**/*.test.ts
+**/*.test.tsx
+
+# Otros archivos
+.git/
+.github/
+.vscode/
