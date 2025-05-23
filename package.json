@@ -23,14 +23,23 @@
     }
   },
   "files": [
-    "dist/components",
-    "dist/icons",
+    "dist/components/**/*.js",
+    "dist/components/**/*.d.ts",
+    "dist/components/**/*.d.ts.map",
+    "!dist/components/**/*.stories.*",
+    "dist/icons/**/*.js",
+    "dist/icons/**/*.d.ts",
+    "dist/icons/**/*.d.ts.map",
+    "!dist/icons/**/*.stories.*",
     "dist/index.js",
     "dist/index.d.ts",
     "dist/index.d.ts.map",
     "dist/style.css",
     "src/index.css",
-    "src/assets/css/globals.css"
+    "src/assets/css/globals.css",
+    "!dist/stories/**",
+    "!dist/App.*",
+    "!dist/main.*"
   ],
   "scripts": {
     "dev": "vite",

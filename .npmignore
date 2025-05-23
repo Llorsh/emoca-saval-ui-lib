@@ -11,6 +11,8 @@ src/stories/
 **/*.stories.d.ts
 **/*.stories.d.ts.map
 dist/stories/
+dist/components/**/*.stories.*
+dist/icons/**/*.stories.*
 
 # Archivos de configuración
 .eslintrc.js
@@ -29,3 +31,7 @@ vite.config.js
 .git/
 .github/
 .vscode/
+
+# Archivos específicos que no queremos publicar
+dist/App.*
+dist/main.*
