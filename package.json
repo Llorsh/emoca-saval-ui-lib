@@ -1,7 +1,7 @@
 {
   "name": "emoca-saval-ui-lib",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,29 +18,27 @@
       "import": "./dist/icons/index.js",
       "types": "./dist/icons/index.d.ts"
     },
-    "./dist/style.css": {
+    "./style.css": {
       "default": "./dist/style.css"
     }
   },
   "files": [
-    "dist/components/**/*.js",
-    "dist/components/**/*.d.ts",
-    "dist/components/**/*.d.ts.map",
-    "!dist/components/**/*.stories.*",
-    "dist/icons/**/*.js",
-    "dist/icons/**/*.d.ts",
-    "dist/icons/**/*.d.ts.map",
-    "!dist/icons/**/*.stories.*",
-    "dist/index.js",
-    "dist/index.d.ts",
-    "dist/index.d.ts.map",
-    "dist/style.css",
-    "src/index.css",
-    "src/assets/css/globals.css",
+    "dist",
+    "!dist/**/*.stories.*",
     "!dist/stories/**",
-    "!dist/App.*",
-    "!dist/main.*"
+    "src/index.css",
+    "src/assets/css/globals.css"
   ],
+  "typesVersions": {
+    "*": {
+      "components": [
+        "dist/components/index.d.ts"
+      ],
+      "icons": [
+        "dist/icons/index.d.ts"
+      ]
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build:css": "tailwindcss -i ./src/index.css -o ./dist/style.css --minify",
@@ -48,7 +46,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "deploy-storybook": "storybook build && gh-pages -d storybook-static"
+
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
