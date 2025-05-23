@@ -1,5 +1,5 @@
+import { CheckIcon } from "@/icons";
 import { useState, useEffect } from "react";
-import CheckSvg from "@/icons/Check";
 
 interface CheckboxProps {
     name?: string;
@@ -34,7 +34,7 @@ const Checkbox = ({ name = "checkbox", defaultChecked = false, onChange }: Check
                     if (e.key === "Enter" || e.key === " ") toggleCheckbox();
                 }}
             >
-                {checked && <CheckSvg />}
+                {checked && <CheckIcon />}
             </div>
         </>
     );
