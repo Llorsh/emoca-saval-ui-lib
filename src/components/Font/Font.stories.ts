@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Font from './Font';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
-const meta = {
+const meta: Meta<typeof Font> = {
   title: 'Fonts/Heading',
   component: Font,
   parameters: {
