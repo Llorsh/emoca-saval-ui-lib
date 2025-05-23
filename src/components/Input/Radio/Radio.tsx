@@ -1,5 +1,5 @@
+import { CheckIcon } from "icons";
 import { useState, useEffect } from "react";
-import CheckSvg from "@/icons/Check";
 
 interface RadioProps {
   name?: string;
@@ -38,7 +38,7 @@ const Radio = ({
           if (e.key === "Enter" || e.key === " ") toggleCheckbox();
         }}
       >
-        {checked && <CheckSvg />}
+        {checked && <CheckIcon />}
       </div>
     </>
   );
