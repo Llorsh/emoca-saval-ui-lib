@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "declarationMap": true,
     "target": "ES6",
     "lib": ["ES2020", "DOM"],
     "module": "ESNext",
-    "declaration": true,
-    "declarationMap": true,
     "outDir": "dist",
     "rootDir": "src",
     "jsx": "react-jsx",
@@ -20,7 +21,7 @@
     },
     "composite": true
   },
-  "include": ["src/index.ts", "src/components/**/*", "src/icons/**/*"],
+  "include": ["src"],
   "exclude": [
     "node_modules",
     "dist",
