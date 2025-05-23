@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useState } from "react";
-import SearchSVG from "../Svg/Search";
-import XSVG from "../Svg/X";
+import SearchSVG from "../../icons/Search";
+import XSVG from "../../icons/X";
 
 export interface SearchInputProps {
   value: string;

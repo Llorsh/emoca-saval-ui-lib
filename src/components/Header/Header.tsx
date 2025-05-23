@@ -1,4 +1,4 @@
-import { Button } from '@/components/Button/Button';
+import Button from '@/components/Button/Button';
 import './header.css';
 
 type User = {
@@ -12,7 +12,7 @@ export interface HeaderProps {
   onCreateAccount?: () => void;
 }
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
+const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
   <header>
     <div className="storybook-header">
       <div>
@@ -52,3 +52,5 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
     </div>
   </header>
 );
+
+export default Header;

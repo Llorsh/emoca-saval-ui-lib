@@ -17,6 +17,6 @@
       "@/*": ["*"]
     }
   },
-  "include": ["src/index.ts", "src/components"],
+  "include": ["src/index.ts", "src/components", "src/icons"],
   "exclude": ["node_modules", "dist", "**/*.stories.tsx", "**/*.test.tsx"]
 }

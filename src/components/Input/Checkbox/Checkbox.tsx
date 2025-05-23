@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import CheckSvg from "@/components/Svg/Check";
+import CheckSvg from "@/icons/Check";
 
 interface CheckboxProps {
     name?: string;
