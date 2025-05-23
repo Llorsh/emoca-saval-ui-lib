@@ -1,4 +1,5 @@
-import { CheckIcon } from "@/icons";
+
+import { CheckIcon } from "icons";
 import { useState, useEffect } from "react";
 
 interface CheckboxProps {
